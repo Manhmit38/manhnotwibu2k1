@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mạnh Mít</title>
+    <meta charset="urt-8">
+    <link rel="stylesheet" type="text/css" href="Mitproject.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="/Mitproject.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Trang chủ -->
+    <section id="particles-js">
+
+        <!-- Task Menu -->
+        <div class="tasktop">
+            <div class="logo">
+                <a href="#" onmouseover="PlaySound('SoundMain')" onmouseout="StopSound('SoundMain')"><i
+                        class="fa fa-book fa-3x"></i></a>
+                <audio id="SoundMain" src="./Sounds/Logo.mp3"></audio>
+            </div>
+
+            <div class="search-menu">
+                <input type="text" placeholder="Bạn muốn đọc sách gì...">
+                <a href="#" onmouseover="PlaySound('SearchSound')" onmouseover="StopSound('SearchSound')"><i
+                        class="fa fa-search fa-1x"></i></a>
+                <audio id="SearchSound" src="./Sounds/KeyB.mp3"></audio>
+            </div>
+
+            
+            <div class="mainmenu">
+
+                <div class="btn-menu">
+                    <div class="detail-btn">
+                        <span>Mua</span>
+                    </div>
+                    <a href="#" onmouseover="PlaySound('ShopSound')" onmouseover="PlaySound('ShopSound')"><i
+                            class="fa fa-shopping-bag fa-1x"></i></a>
+                    <audio id="ShopSound" src="./Sounds/Oder.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="btn-menu">
+                <div class="details-btn">
+                    <span>Tin</span>
+                </div>
+                <a href="#" onmouseover="PlaySound('BellSound')" onmouseover="PlaySound('BellSound')"><i
+                        class="fa fa-bell-o fa-x"></i></a>
+                <audio id="BellSound" src="./Sounds/Bell.mp3"></audio>
+            </div>
+
+            <div class="btn-menu">
+                <div class="details-btn">
+                    <span>Acc</span>
+                </div>
+                <a href="#" onmouseover="PlaySound('AccSound')" onmouseover="PlaySound('AccSound')"><i
+                        class="fa fa-user-o fa-1x"></i></a>
+                <audio id="AccSound" src="./Sounds/Open-Book.mp3"></audio>
+            </div>
+        </div>
+
+        <!-- Xin chào -->
+        <div class="hi">
+            <ul class="hi-content">
+                <li><span>... Hi ...</span></li>
+                <li><span>Welcome</span></li>
+                <li><span>... To ...</span></li>
+                <li><span>Mít Lib</span></li>
+                <li><span>Thư Viện</span></li>
+            </ul>
+            <img src="./Images/Sun.gif" alt="">
+            <h1>New Book</h1>
+        </div>
+
+
+
+        <!-- Sách 3d -->
+        <div class="section">
+
+            <!-- Book 1 -->
+            <div class="book-3d" onmouseover="PlaySound('TouchSound')" onmouseover="PlaySound('TouchSound')"
+            onclick="audio2.play();">
+                <div class="book-side">
+                    <img src="./Images/middle-cover.jpg" alt="">
+                </div>
+                <div class="front">
+                    <img src="./Images/front-cover.jpg" alt="">
+                    <button type="button">
+                        <i class="fa fa-eye fa-5x"></i>
+                        <img src="./Images/ciu.gif" alt="">
+                    </button>
+                </div>
+                <div class="back">
+                    <img src="./Images/back-cover.jpg" alt="">
+                </div>
+                <audio id="TouchSound" src="./Sounds/Touchbook.mp3"></audio>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-3d" onmouseover="PlaySound('TouchSound')" onmouseover="PlaySound('TouchSound')"
+            onclick="audio2.play();">
+                <div class="book-side">
+                    <img src="./Images/side.jpg" alt="">
+                </div>
+                <div class="front">
+                    <img src="./Images/Ttbtkdbp.jpg" alt="">
+                    <button type="button">
+                        <img src="./Images/ciu.gif" alt="">
+                        <i class="fa fa-eye fa-5x"></i>
+                    </button>
+                </div>
+                <div class="back">
+                    <img src="./Images/back.jpg" alt="">
+                </div>
+                <audio id="TouchSound" src="./Sounds/Touchbook.mp3"></audio>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-3d" onmouseover="PlaySound('TouchSound')" onmouseover="PlaySound('TouchSound')"
+            onclick="audio2.play();">
+                <div class="book-side">
+                    <img src="./Images/side.jpg" alt="">
+                </div>
+                <div class="front">
+                    <img src="./Images/TheReturnOfSherlockHolmes.jpg" alt="">
+                    <button type="button">
+                        <i class="fa fa-eye fa-5x"></i>
+                        <img src="./Images/ciu.gif" alt="">
+                    </button>
+                </div>
+                <div class="back">
+                    <img src="./Images/back.jpg" alt="">
+                </div>
+                <audio id="TouchSound" src="./Sounds/Touchbook.mp3"></audio>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+            const audio2 = new Audio();
+            audio2.src ="./Sounds/Open-bookP1.mp3"
+        </script>
+        <script type="text/javascript" src="./Javascript/particles.min.js"></script>
+        <script type="text/javascript" src="./Javascript/Mainpage.js"></script>
+    </section>
+
+
+
+
+    <!-- Trang 2 -->
+    <section id="pagetwo">
+        <div class="khampha">
+            <h3>Click vào sách để xem mặt sau</h3>
+            <h1>Khám Phá</h1>
+            <div class="trend">
+                <img src="./Images/itachi.gif" alt="">
+                <h1>On Top Lib</h1>
+            </div>
+        </div>
+        <div class="body-book">
+        <div class="container-p2">
+            <div class="box"  onmouseover="PlaySound('TouchSoundp2')" onmouseover="PlaySound('TouchSoundp2')">
+                <h2 class="name">Trinh thám</h2>
+                <a href="#pagetwoo" class="buy" onclick="audio.play();">Buy Now</a>
+                <div class="circle">
+                    <img src="./Images/Vibing.gif">
+                </div>
+                <img src="./Images/Dltt.jpg" alt="" class="product">
+            </div>
+            <div class="box"  onmouseover="PlaySound('TouchSoundp2')" onmouseover="PlaySound('TouchSoundp2')">
+                <h2 class="name">Tâm lý</h2>
+                <a href="#pagetwoo" class="buy" onclick="audio.play();">Buy Now</a>
+                <div class="circle">
+                    <img src="./Images/Vibing.gif">
+                </div>
+                <img src="./Images/Tdn.jpg" alt="" class="product">
+            </div>
+            <div class="box" onmouseover="PlaySound('TouchSoundp2')" onmouseover="PlaySound('TouchSoundp2')">
+                <h2 class="name">Trinh thám</h2>
+                <a href="#pagetwoo" class="buy" onclick="audio.play();">Buy Now</a>
+                <div class="circle">
+                    <img src="./Images/Vibing.gif">
+                </div>
+                <img src="./Images/snm.jpg" alt="" class="product">
+                <audio id="TouchSoundp2" src="./Sounds/Knocking-door.mp3"></audio>
+            </div>
+        </div>
+        <div class="trend-p2">
+            <img src="./Images/Theloai.gif" >
+            <h1>Thể loại</h1>
+        </div>
+        </div>
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src ="./Sounds/Coins-falling.mp3"
+        </script>
+        <script src="./Javascript/vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max:25,
+                speed:400
+            });
+        </script>
+
+        <script type="text/javascript" src="./Javascript/particles.min.js"></script>
+        <script type="text/javascript" src="./Javascript/Pagetwo.js"></script>
+    </section>
+
+
+
+    <!-- Trang 3 -->
+    <section id="pagethree">
+        <div class="book-slam">
+        <div class="container-p3">
+            <div class="content-p3">
+                <ul>
+                    <li>
+                        <div class="book-p3" onmouseover="PlaySound('TouchSoundp3')" onmouseover="PlaySound('TouchSoundp3')">
+                            <ul class="front-p3">
+                                <li>
+                                    <div class="frontcover-p3">
+                                            <p class="title-p3">Mít Library</p>
+                                            <h2 class="heading-p3">Tâm lý<br></h2>
+                                            <div class="book-icon-p3">
+                                                <img src="./Images/cat-and-girl.gif" class="anh-p3" alt="">
+                                            </div>
+                                            <div class="writer-p3">
+                                                <p>
+                                                </p>
+                                            </div>
+                                            <p class="copyright-p3">&copy;&nbsp; Copyright 2001</p>
+                                    </div>
+                                </li>
+                                <li><img src="./Images/Itachi-p3.gif" class="anh-p3" alt=""></li>
+                            </ul>
+
+                             
+                            <ul class="page-p3">
+                                <li><img src="./Images/Font-back-p3.jpeg" class="anh-p3" alt=""></li>
+                                <li>
+                                    <a href="#pagethree" class="btn-p3" onclick="audio3.play();">See</a>
+                                </li>
+                                <li><img src="./Images/Trangsach3.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach2.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                                
+                                
+                            </ul>
+                            <ul class="back-p3">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-p3">
+                <ul>
+                    <li>
+                        <div class="book-p3" onmouseover="PlaySound('TouchSoundp3')" onmouseover="PlaySound('TouchSoundp3')">
+                            <ul class="front-p3">
+                                <li>
+                                    <div class="frontcover-p3">
+                                            <p class="title-p3">Mít Library</p>
+                                            <h2 class="heading-p3">Tư duy<br></h2>
+                                            <div class="book-icon-p3">
+                                                <img src="./Images/Tamly.gif" class="anh-p3" alt="">
+                                            </div>
+                                            <div class="writer-p3">
+                                                <p>
+                                                </p>
+                                            </div>
+                                            <p class="copyright-p3">&copy;&nbsp; Copyright 2001</p>
+                                    </div>
+                                </li>
+                                <li><img src="./Images/Itachi-p3.gif" class="anh-p3" alt=""></li>
+
+                            </ul>
+                             
+                            <ul class="page-p3">
+                                <li><img src="/ed2.jpg" alt=""></li>
+                                <li>
+                                    <a href="#pagethree" class="btn-p3" onclick="audio3.play();">See</a>
+                                </li>
+                                
+                                <li><img src="./Images/Trangsach3.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach2.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                                
+                            </ul>
+                            <ul class="back-p3">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+             <div class="container-p3">
+            <div class="content-p3">
+                <ul>
+                    <li>
+                        <div class="book-p3" onmouseover="PlaySound('TouchSoundp3')" onmouseover="PlaySound('TouchSoundp3')">
+                            <ul class="front-p3">
+                                <li>
+                                    <div class="frontcover-p3">
+                                            <p class="title-p3">Mít Library</p>
+                                            <h2 class="heading-p3">Linh hồn<br></h2>
+                                            <div class="book-icon-p3">
+                                                <img src="./Images/Linhhon.gif" class="anh-p3" alt="">
+                                            </div>
+                                            <div class="writer-p3">
+                                                <p>
+                                                </p>
+                                            </div>
+                                            <p class="copyright-p3">&copy;&nbsp; Copyright 2001</p>
+                                    </div>
+                                </li>
+                                <li><img src="./Images/Itachi-p3.gif" class="anh-p3" alt=""></li>
+                                
+                            </ul>
+                            <ul class="page-p3">
+                                <li><img src="ptu2" alt=""></li>
+                                <li>
+                                    <a href="#pagethree" class="btn-p3" onclick="audio3.play();">See</a>
+                                </li>
+                                <li><img src="./Images/Trangsach3.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach2.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                                
+                                
+                            </ul>
+                            <ul class="back-p3">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-p3">
+                <ul>
+                    <li>
+                        <div class="book-p3" onmouseover="PlaySound('TouchSoundp3')" onmouseover="PlaySound('TouchSoundp3')">
+                            <ul class="front-p3">
+                                <li>
+                                    <div class="frontcover-p3">
+                                            <p class="title-p3">Mít Library</p>
+                                            <h2 class="heading-p3">Detective<br></h2>
+                                            <div class="book-icon-p3">
+                                                <img src="./Images/Detective.gif" class="anh-p3" alt="">
+                                            </div>
+                                            <div class="writer-p3">
+                                                <p>
+                                                </p>
+                                            </div>
+                                            <p class="copyright-p3">&copy;&nbsp; Copyright 2001</p>
+                                    </div>
+                                </li>
+                                <li><img src="./Images/Itachi-p3.gif" class="anh-p3" alt=""></li>
+
+                            </ul>
+                             
+                            <ul class="page-p3">
+                                <li><img src="/ptt3.jpg" alt=""></li>
+                                <li>
+                                    <a href="#pagethree" class="btn-p3" onclick="audio3.play();">See</a>
+                                </li>
+                                <li><img src="./Images/Trangsach3.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach2.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                                   
+                                   
+                            </ul>
+                            <ul class="back-p3">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="container-p3">    
+            <div class="content-p3">
+                <ul>
+                    <li>
+                        <div class="book-p3" onmouseover="PlaySound('TouchSoundp3')" onmouseover="PlaySound('TouchSoundp3')">
+                            <ul class="front-p3">
+                                <li>
+                                    <div class="frontcover-p3">
+                                            <p class="title-p3">Mít Library</p>
+                                            <h2 class="heading-p3">Lập trình<br></h2>
+                                            <div class="book-icon-p3">
+                                                <img src="./Images/Laptrinh.gif" class="anh-p3" alt="">
+                                            </div>
+                                            <div class="writer-p3">
+                                                <p>
+                                                </p>
+                                            </div>
+                                            <p class="copyright-p3">&copy;&nbsp; Copyright 2001</p>
+                                    </div>
+                                </li>
+                                <li><img src="./Images/Itachi-p3.gif" class="anh-p3" alt=""></li>
+
+                            </ul>
+                             
+                            <ul class="page-p3">
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                                <li>
+                                    <a href="#pagethree" class="btn-p3" onclick="audio3.play();">See</a>
+                                </li>
+                                <li><img src="./Images/Trangsach3.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach2.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                            </ul>
+                            <ul class="back-p3">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-p3">
+                <ul>
+                    <li>
+                        <div class="book-p3" onmouseover="PlaySound('TouchSoundp3')" onmouseover="PlaySound('TouchSoundp3')">
+                            <ul class="front-p3">
+                                <li>
+                                    <div class="frontcover-p3">
+                                            <p class="title-p3">Mít Library</p>
+                                            <h2 class="heading-p3">Manga<br></h2>
+                                            <div class="book-icon-p3">
+                                                <img src="./Images/Uchiha.gif" class="anh-p3" alt="">
+                                            </div>
+                                            <div class="writer-p3">
+                                                <p>
+                                                </p>
+                                            </div>
+                                            <p class="copyright-p3">&copy;&nbsp; Copyright 2001</p>
+                                    </div>
+                                </li>
+                                <li><img src="./Images/Itachi-p3.gif" class="anh-p3" alt=""></li>
+
+                            </ul>
+                             
+                            <ul class="page-p3">
+                                <li><img src="/panm2.jpg" alt=""></li>
+                                <li>
+                                    <a href="#pagethree" class="btn-p3" onclick="audio3.play();">See</a>
+                                </li>
+                                <li><img src="./Images/Trangsach3.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach2.jpg" alt=""></li>
+                                <li><img src="./Images/Trangsach.jpg" alt=""></li>
+                            </ul>
+                            <ul class="back-p3">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <audio id="TouchSoundp3" src="./Sounds/open-book-P3.mp3"></audio>
+        <script type="text/javascript">
+            const audio3 = new Audio();
+            audio3.src ="./Sounds/See.mp3"
+        </script>
+        <script type="text/javascript" src="./Javascript/particles.min.js"></script>
+        <script type="text/javascript" src="./Javascript/Pagethree.js"></script>
+    </section>
+</body>
+
+</html>
